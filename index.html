@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wafle | Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="bg-shape shape-1"></div>
+        <div class="bg-shape shape-2"></div>
+        <div class="bg-shape shape-3"></div>
+        <div class="bg-shape shape-4"></div>
+    </div>
+
+    <!-- Floating Particles -->
+    <div class="particles-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <div class="container">
+        <!-- Theme Toggle -->
+        <div class="theme-toggle">
+            <input type="checkbox" id="theme-switch" class="theme-switch">
+            <label for="theme-switch" class="theme-label">
+                <div class="toggle-icon">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </div>
+                <span class="toggle-text">Dark Mode</span>
+            </label>
+        </div>
+
+        <!-- Header with Navigation -->
+        <header class="header">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <span class="logo-text">Wafle</span>
+                <div class="logo-pulse"></div>
+            </div>
+            
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#featured" class="nav-link active" data-text="Featured">Featured</a></li>
+                    <li><a href="#projects" class="nav-link" data-text="Projects">Projects</a></li>
+                    <li><a href="#skills" class="nav-link" data-text="Skills">Skills</a></li>
+                    <li><a href="#blog" class="nav-link" data-text="Blog">Blog</a></li>
+                    <li><a href="#about" class="nav-link" data-text="About">About</a></li>
+                    <li><a href="#contact" class="nav-link" data-text="Contact">Contact</a></li>
+                </ul>
+                <div class="nav-indicator"></div>
+            </nav>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search projects, skills...">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+                <div class="search-results"></div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-grid">
+                <div class="profile-section">
+                    <div class="profile-container">
+                        <div class="profile-image">
+                            <div class="image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Wafle">
+                                <div class="image-overlay">
+                                    <div class="status-indicator">
+                                        <span class="status-dot"></span>
+                                        <span>Available for projects</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile-glow"></div>
+                            <div class="profile-orbits">
+                                <div class="orbit orbit-1"></div>
+                                <div class="orbit orbit-2"></div>
+                                <div class="orbit orbit-3"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="profile-stats">
+                            <div class="stat">
+                                <span class="stat-number">47+</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Years</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">∞</span>
+                                <span class="stat-label">Coffee Cups</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <i class="fas fa-bolt"></i>
+                        <span>Open for collaborations</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        <span class="title-main">Hey, I'm</span>
+                        <span class="title-name">Wafle</span>
+                    </h1>
+                    
+                    <div class="typewriter-container">
+                        <p class="typewriter-text">I build <span class="typed-text"></span><span class="cursor">|</span></p>
+                    </div>
+                    
+                    <p class="hero-bio">
+                        I'm a self-taught coder obsessed with turning ideas into messy-but-functional code. Mostly hacking around with JavaScript and Python, but always down to learn something new. I build things that look simple on the surface but have just enough chaos under the hood to keep life interesting. Coffee-fueled, bug-embracing, and always trying to make digital magic happen.
+                    </p>
+                    
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View My Work</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Get In Touch</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <a href="mailto:caffeineaddict66@outlook.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>caffeineaddict66@outlook.com</span>
+                        </a>
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-codepen"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <div class="scroll-line"></div>
+                <span>Scroll to explore</span>
+            </div>
+        </section>
+
+        <!-- Featured Section -->
+        <section id="featured" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Featured Work</h2>
+                <p class="section-subtitle">Projects that showcase my passion for creative problem-solving</p>
+            </div>
+            
+            <div class="featured-grid">
+                <div class="featured-card">
+                    <div class="card-badge">Hot</div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <div class="card-actions">
+                            <button class="card-action-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                            </button>
+                            <button class="card-action-btn">
+                                <i class="fas fa-code"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <h3 class="card-title">Neural Dashboard</h3>
+                    <p class="card-description">Real-time data visualization with machine learning insights and interactive components.</p>
+                    <div class="card-tech">
+                        <span class="tech-tag">TensorFlow.js</span>
+                        <span class="tech-tag">D3.js</span>
+                        <span class="tech-tag">WebGL</span>
+                    </div>
+                    <div class="card-footer">
+                        <div class="card-stats">
+                            <div class="card-stat">
+                                <i class="fas fa-star"></i>
+                                <span>2.4k</span>
+                            </div>
+                            <div class="card-stat">
+                                <i class="fas fa-code-branch"></i>
+                                <span>187</span>
+                            </div>
+                        </div>
+                        <div class="card-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 95%"></div>
+                            </div>
+                            <span>95% complete</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="featured-card">
+                    <div class="card-badge">New</div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="card-actions">
+                            <button class="card-action-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                            </button>
+                            <button class="card-action-btn">
+                                <i class="fas fa-code"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <h3 class="card-title">Automation OS</h3>
+                    <p class="card-description">Complete workflow automation system with plugin architecture and AI assistance.</p>
+                    <div class="card-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">Redis</span>
+                    </div>
+                    <div class="card-footer">
+                        <div class="card-stats">
+                            <div class="card-stat">
+                                <i class="fas fa-star"></i>
+                                <span>1.2k</span>
+                            </div>
+                            <div class="card-stat">
+                                <i class="fas fa-code-branch"></i>
+                                <span>64</span>
+                            </div>
+                        </div>
+                        <div class="card-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%"></div>
+                            </div>
+                            <span>80% complete</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="featured-card">
+                    <div class="card-badge">AI</div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="card-actions">
+                            <button class="card-action-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                            </button>
+                            <button class="card-action-btn">
+                                <i class="fas fa-code"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <h3 class="card-title">Code Companion</h3>
+                    <p class="card-description">AI-powered development assistant that learns your coding patterns and suggests improvements.</p>
+                    <div class="card-tech">
+                        <span class="tech-tag">OpenAI</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">WebSockets</span>
+                    </div>
+                    <div class="card-footer">
+                        <div class="card-stats">
+                            <div class="card-stat">
+                                <i class="fas fa-star"></i>
+                                <span>3.1k</span>
+                            </div>
+                            <div class="card-stat">
+                                <i class="fas fa-code-branch"></i>
+                                <span>243</span>
+                            </div>
+                        </div>
+                        <div class="card-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 70%"></div>
+                            </div>
+                            <span>70% complete</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Technical Arsenal</h2>
+                <p class="section-subtitle">The tools and technologies I use to bring ideas to life</p>
+            </div>
+            
+            <div class="skills-container">
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-palette"></i>
+                            Frontend
+                        </h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript/TypeScript</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">React & Vue</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="88"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">CSS/Sass</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="92"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-server"></i>
+                            Backend
+                        </h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Node.js</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Databases</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="82"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-tools"></i>
+                            Tools & Other
+                        </h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Git & DevOps</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="87"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">UI/UX Design</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Testing</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-visual">
+                    <div class="tech-sphere">
+                        <div class="sphere"></div>
+                        <div class="tech-item" style="--i:1">JS</div>
+                        <div class="tech-item" style="--i:2">PY</div>
+                        <div class="tech-item" style="--i:3">CSS</div>
+                        <div class="tech-item" style="--i:4">HTML</div>
+                        <div class="tech-item" style="--i:5">SQL</div>
+                        <div class="tech-item" style="--i:6">Git</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Recent Projects</h2>
+                <p class="section-subtitle">A collection of my latest work and experiments</p>
+            </div>
+            
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="ai">AI/ML</button>
+                <button class="filter-btn" data-filter="tools">Tools</button>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Projects will be loaded dynamically via JavaScript -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Ready to bring your next idea to life? Let's talk!</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get in touch</h3>
+                    <p>I'm always interested in new opportunities, collaborations, or just chatting about tech and coffee.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span>Email</span>
+                                <a href="mailto:caffeineaddict66@outlook.com">caffeineaddict66@outlook.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span>Location</span>
+                                <span>Digital Nomad</span>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <span>Response Time</span>
+                                <span>Usually within 24 hours</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <div class="logo">
+                            <div class="logo-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <span class="logo-text">Wafle</span>
+                        </div>
+                        <p>Building digital experiences with a touch of magic and a lot of coffee.</p>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <div class="link-group">
+                            <h4>Navigate</h4>
+                            <a href="#featured">Featured</a>
+                            <a href="#projects">Projects</a>
+                            <a href="#skills">Skills</a>
+                            <a href="#about">About</a>
+                        </div>
+                        <div class="link-group">
+                            <h4>Connect</h4>
+                            <a href="#">GitHub</a>
+                            <a href="#">LinkedIn</a>
+                            <a href="#">Twitter</a>
+                            <a href="#">CodePen</a>
+                        </div>
+                        <div class="link-group">
+                            <h4>Resources</h4>
+                            <a href="#">Blog</a>
+                            <a href="#">Tutorials</a>
+                            <a href="#">Tools</a>
+                            <a href="#">Setup</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2023 Wafle. Crafted with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i></p>
+                    <div class="footer-actions">
+                        <button class="theme-toggle-small">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                        <button class="back-to-top">
+                            <i class="fas fa-arrow-up"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <span>Wafle</span>
+            </div>
+            <div class="loading-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
